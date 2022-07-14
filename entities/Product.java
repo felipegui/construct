@@ -6,11 +6,22 @@ public class Product {
 	public double price;
 	public int quantity;
 	
-	//Method construct
+	//Default builder
+	public Product() {
+		
+	}
+	
+	//Custom constructor method
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	//Overload
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
 	}
 	
 	public double totalValueInSotck() {
